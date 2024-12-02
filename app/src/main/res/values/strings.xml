@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Gomoku</string>
+    <string name="action_rematch">Rematch</string>
+    <string name="action_new_game">New game</string>
+    <string name="action_undo">Undo</string>
+    <string name="action_difficulty">Difficulty</string>
+    <string name="action_difficulty_easy">Easy</string>
+    <string name="action_difficulty_medium">Medium</string>
+    <string name="action_difficulty_hard">Hard</string>
+    <string name="action_about">About</string>
+    <string name="about_title">About</string>
+    <string name="new_game_difficulty">Difficulty</string>
+    <string name="new_game_difficulty_easy">Easy</string>
+    <string name="new_game_difficulty_medium">Medium</string>
+    <string name="new_game_difficulty_hard">Hard</string>
+    <string name="new_game_mode">Game mode</string>
+    <string name="new_game_mode_single_player_first">Single player first</string>
+    <string name="new_game_mode_single_player_second">Single player second</string>
+    <string name="new_game_mode_multi_player">Two players</string>
+    <string name="new_game_title">New game</string>
+</resources>
