@@ -9,6 +9,7 @@ public class BoardState {
     int wChain;
     char[][] board;
     int lastMoveX, lastMoveY;
+    boolean gameOver;
     private char userTurn;
     private char aiTurn;
     private char currentPlayer;
@@ -28,6 +29,9 @@ public class BoardState {
         this.boardSize = boardSize;
         this.wChain = wChain;
         board = new char[boardSize][boardSize];
+        lastMoveX = -1;
+        lastMoveY = -1;
+        gameOver = false;
         // Initialize AI and board
         ai = new AI(aiLevel, maxDepth);
         moves = new String[boardSize * boardSize];
@@ -36,8 +40,6 @@ public class BoardState {
         minRow = boardSize/2;
         maxCol = boardSize/2;
         minCol = boardSize/2;
-        lastMoveX = -1;
-        lastMoveY = -1;
     }
 
     // Copy constructor is used to create virtual state. When AI is thinking the best move,
@@ -123,10 +125,12 @@ public class BoardState {
         minRow = Math.min(minRow, row);
         maxCol = Math.max(maxCol, col);
         minCol = Math.min(minCol, col);
+        gameOver = true;
         if(isEnded(row, col, 1, 0)) return true;
         if(isEnded(row, col, 0, 1)) return true;
         if(isEnded(row, col, 1, 1)) return true;
         if(isEnded(row, col, 1, -1)) return true;
+        gameOver = false;
         moves[moveCounter] = row + "," + col;
         moveCounter++;
         changeTurn();
@@ -138,7 +142,6 @@ public class BoardState {
     // this doesn't affect the actual board state that user can see.
     public BoardState applyMove(int row, int col) {
         BoardState afterMove = new BoardState(this);
-//        afterMove.board[row][col] = player;
         afterMove.setCurrentPlayer(currentPlayer);
         afterMove.setUserTurn(this.userTurn);
         afterMove.setAiTurn(this.aiTurn);

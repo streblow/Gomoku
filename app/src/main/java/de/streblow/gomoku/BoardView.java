@@ -6,15 +6,14 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import androidx.annotation.Nullable;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 
 public class BoardView extends View {
 
     private static final int LINE_THICK = 1; //2
-    private static final int ELT_STROKE_WIDTH = 2; //3
-    private static final int ELT_MARGIN = 5;
+    private static final int STROKE_WIDTH = 2; //3
+    private static final int MARGIN = 5;
     private int width, height;
     private Paint gridPaint, oPaint, xPaint, markerPaint;
     private MainActivity activity;
@@ -23,6 +22,8 @@ public class BoardView extends View {
     private BoardState boardState;
     private int markerSize;
     private int paddingSize;
+    private int lineThick;
+    private int strokeWidth;
 
     public BoardView(Context context) {
         super(context);
@@ -40,11 +41,11 @@ public class BoardView extends View {
         oPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         oPaint.setColor(Color.RED);
         oPaint.setStyle(Paint.Style.STROKE);
-        oPaint.setStrokeWidth(ELT_STROKE_WIDTH);
+        oPaint.setStrokeWidth(STROKE_WIDTH);
         xPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         xPaint.setColor(Color.BLUE);
         xPaint.setStyle(Paint.Style.STROKE);
-        xPaint.setStrokeWidth(ELT_STROKE_WIDTH);
+        xPaint.setStrokeWidth(STROKE_WIDTH);
 
         // marker of last move
         markerPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
@@ -73,8 +74,17 @@ public class BoardView extends View {
         boxLength =  squareLength / boardSize;
         squareLength = boxLength * boardSize;
 
-        markerSize = Math.max(2 * ELT_MARGIN, boxLength / 4);
-        paddingSize = Math.max(ELT_MARGIN, boxLength / 6);
+        paddingSize = Math.max(MARGIN, boxLength / 6);
+        markerSize = Math.max(paddingSize + 2, boxLength / 4);
+
+        lineThick = LINE_THICK;
+        strokeWidth = STROKE_WIDTH;
+        if(width > 400) {
+            lineThick = LINE_THICK + 1;
+            strokeWidth = STROKE_WIDTH + 4;
+        }
+        oPaint.setStrokeWidth(strokeWidth);
+        xPaint.setStrokeWidth(strokeWidth);
 
         super.onMeasure(
                 MeasureSpec.makeMeasureSpec(squareLength, MeasureSpec.EXACTLY),
@@ -91,7 +101,7 @@ public class BoardView extends View {
     // Detect user interaction with screen (detect user putting stones)
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        if(event.getAction() == MotionEvent.ACTION_DOWN) {
+        if((event.getAction() == MotionEvent.ACTION_DOWN) && (!boardState.gameOver)) {
             int x = (int) (event.getX() / boxLength);
             int y = (int) (event.getY() / boxLength);
             // if there are 2 players, no need to implement AI
@@ -146,7 +156,7 @@ public class BoardView extends View {
             // vertical lines
             // the line has thickness, that's why there is left and right
             float left = boxLength * i;
-            float right = left + LINE_THICK;
+            float right = left + lineThick;
             float top = 0;
             float bottom = squareLength;
 
@@ -156,13 +166,13 @@ public class BoardView extends View {
             float left2 = 0;
             float right2 = squareLength;
             float top2 = boxLength * i;
-            float bottom2 = top2 + LINE_THICK;
+            float bottom2 = top2 + lineThick;
 
             canvas.drawRect(left2, top2, right2, bottom2, gridPaint);
         }
-        canvas.drawRect(squareLength - LINE_THICK, 0,
+        canvas.drawRect(squareLength - lineThick, 0,
                 boxLength * boardSize, squareLength, gridPaint);
-        canvas.drawRect(0, squareLength - LINE_THICK,
+        canvas.drawRect(0, squareLength - lineThick,
                 squareLength, squareLength, gridPaint);
     }
 
@@ -179,23 +189,23 @@ public class BoardView extends View {
     private void drawEachBox(Canvas canvas, char c, int y, int x) {
         if(c == 'O') {
             // drawing circle to the center of box
-            float cx = (boxLength * x) + LINE_THICK + (boxLength - LINE_THICK) / 2;
-            float cy = (boxLength * y) + LINE_THICK + (boxLength - LINE_THICK) / 2;
-            canvas.drawCircle(cx, cy, (boxLength - LINE_THICK - 2 * paddingSize) / 2 , oPaint);
+            float cx = (boxLength * x) + lineThick + (boxLength - lineThick) / 2;
+            float cy = (boxLength * y) + lineThick + (boxLength - lineThick) / 2;
+            canvas.drawCircle(cx, cy, (boxLength - lineThick - 2 * paddingSize) / 2 , oPaint);
         } else if(c == 'X') {
             // this is from upper left to lower right of 'X'
-            float startX = (boxLength * x) + LINE_THICK + paddingSize;
-            float startY = (boxLength * y) + LINE_THICK + paddingSize;
-            float endX = startX + boxLength - LINE_THICK - paddingSize * 2;
-            float endY = startY + boxLength - LINE_THICK - paddingSize * 2;
+            float startX = (boxLength * x) + lineThick + paddingSize;
+            float startY = (boxLength * y) + lineThick + paddingSize;
+            float endX = startX + boxLength - lineThick - paddingSize * 2;
+            float endY = startY + boxLength - lineThick - paddingSize * 2;
 
             canvas.drawLine(startX, startY, endX, endY, xPaint);
 
             // this is from upper right to lower left of 'X'
             float startX2 = (boxLength * (x + 1)) - paddingSize;
-            float startY2 = (boxLength * y) + LINE_THICK + paddingSize;
-            float endX2 = startX2 - boxLength + LINE_THICK + paddingSize * 2;
-            float endY2 = startY2 + boxLength - LINE_THICK - paddingSize * 2;
+            float startY2 = (boxLength * y) + lineThick + paddingSize;
+            float endX2 = startX2 - boxLength + lineThick + paddingSize * 2;
+            float endY2 = startY2 + boxLength - lineThick - paddingSize * 2;
 
             canvas.drawLine(startX2, startY2, endX2, endY2, xPaint);
         }
@@ -207,28 +217,28 @@ public class BoardView extends View {
             left = boxLength * x;
             right = left + markerSize;
             top = boxLength * y;
-            bottom = top + LINE_THICK + 1;
+            bottom = top + lineThick + 1;
             canvas.drawRect(left, top, right, bottom, markerPaint);
             left = boxLength * (x + 1) - markerSize;
             right = left + markerSize;
             canvas.drawRect(left, top, right, bottom, markerPaint);
-            top = boxLength * (y + 1) - LINE_THICK - 1;
-            bottom = top + LINE_THICK + 1;
+            top = boxLength * (y + 1) - lineThick - 1;
+            bottom = top + lineThick + 1;
             canvas.drawRect(left, top, right, bottom, markerPaint);
             left = boxLength * x;
             right = left + markerSize;
             canvas.drawRect(left, top, right, bottom, markerPaint);
 
             left = boxLength * x;
-            right = left + LINE_THICK + 1;
+            right = left + lineThick + 1;
             top = boxLength * y;
             bottom = top + markerSize;
             canvas.drawRect(left, top, right, bottom, markerPaint);
             top = boxLength * (y + 1) - markerSize;
             bottom = top + markerSize;
             canvas.drawRect(left, top, right, bottom, markerPaint);
-            left = boxLength * (x + 1) - LINE_THICK - 1;
-            right = left + LINE_THICK + 1;
+            left = boxLength * (x + 1) - lineThick - 1;
+            right = left + lineThick + 1;
             canvas.drawRect(left, top, right, bottom, markerPaint);
             top = boxLength * y;
             bottom = top + markerSize;

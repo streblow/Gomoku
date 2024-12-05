@@ -185,16 +185,19 @@ public class MainActivity extends AppCompatActivity {
         String msg = "";
         if (userTurn == 'U')
             if (c == 'D')
-                    msg = "Finally: It's a tie.";
+                    msg = getResources().getString(R.string.game_end_tie);
                 else
-                    msg = "Match finished! " + c + " won.";
-        if (c == 'D')
-            msg = "Finally: It's a tie.";
-        else if (userTurn == c)
-            msg = "Good game! You won.";
-        else
-            msg = "Game over! You lost.";
-        new AlertDialog.Builder(this).setTitle(msg).setMessage("Please click New Game").show();
+                    msg = String.format(getResources().getString(R.string.game_end_xo_won), c);
+        else {
+            if (c == 'D')
+                msg = getResources().getString(R.string.game_end_tie);
+            else if (userTurn == c)
+                msg = getResources().getString(R.string.game_end_player_won);
+            else
+                msg = getResources().getString(R.string.game_end_player_lost);
+        }
+        String hint = getResources().getString(R.string.game_end_hint);
+        new AlertDialog.Builder(this).setTitle(msg).setMessage(hint).show();
     }
 
     private void rematchGame() {
