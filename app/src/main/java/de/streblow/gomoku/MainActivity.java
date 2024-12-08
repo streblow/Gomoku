@@ -206,7 +206,7 @@ public class MainActivity extends AppCompatActivity {
         boardView.setBoardState(boardState);
         boardView.setGameActivity(this);
 
-        // U : 2 players, 2 : X player and the user goes first, O : 1 player and the AI goes first
+        // U : 2 players, X : 1 player and the user goes first, O : 1 player and the AI goes first
         if(userTurn == 'U') {
             boardState.setIsMultiPlayer();
             boardState.setUserTurn('X');

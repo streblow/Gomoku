@@ -1,0 +1,19 @@
+<lint-module
+    format="1"
+    dir="/home/streblow/AndroidStudioProjects/Gomoku/app"
+    name=":app"
+    type="APP"
+    maven="Gomoku:app:unspecified"
+    agpVersion="8.7.3"
+    buildFolder="build"
+    bootClassPath="/usr/local/android-sdk/platforms/android-32/android.jar:/usr/local/android-sdk/build-tools/34.0.0/core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-32"
+    neverShrinking="true">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>

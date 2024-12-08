@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".NewGameFragment">
+
+    <TextView
+        android:id="@+id/new_game_title"
+        style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/new_game_title" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="40dp">
+
+        <RadioGroup
+            android:id="@+id/new_game_difficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/new_game_difficulty_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/new_game_difficulty"
+                android:textStyle="bold|italic" />
+
+            <RadioButton
+                android:id="@+id/new_game_difficulty_easy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/new_game_difficulty_easy" />
+
+            <RadioButton
+                android:id="@+id/new_game_difficulty_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/new_game_difficulty_medium" />
+
+            <RadioButton
+                android:id="@+id/new_game_difficulty_hard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/new_game_difficulty_hard" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/new_game_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/new_game_mode_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/new_game_mode"
+                android:textStyle="bold|italic" />
+
+            <RadioButton
+                android:id="@+id/new_game_mode_single_player_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/new_game_mode_single_player_first" />
+
+            <RadioButton
+                android:id="@+id/new_game_mode_single_player_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/new_game_mode_single_player_second" />
+
+            <RadioButton
+                android:id="@+id/new_game_mode_multi_player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/new_game_mode_multi_player" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</LinearLayout>

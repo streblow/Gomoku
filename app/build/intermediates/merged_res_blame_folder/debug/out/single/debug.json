@@ -1,0 +1,142 @@
+[
+    {
+        "merged": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-merged_res-25:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-main-27:/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-merged_res-25:/layout_activity_main.xml.flat",
+        "source": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-main-27:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-merged_res-25:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-main-27:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-merged_res-25:/xml_data_extraction_rules.xml.flat",
+        "source": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-main-27:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-merged_res-25:/drawable_ic_launcher_background.xml.flat",
+        "source": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-main-27:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-merged_res-25:/layout_activity_about.xml.flat",
+        "source": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-main-27:/layout/activity_about.xml"
+    },
+    {
+        "merged": "de.streblow.gomoku.app-merged_res-25:/raw-de_info.txt.flat",
+        "source": "de.streblow.gomoku.app-main-27:/raw-de/info.txt"
+    },
+    {
+        "merged": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-merged_res-25:/raw-de_info.txt.flat",
+        "source": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-main-27:/raw-de/info.txt"
+    },
+    {
+        "merged": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-merged_res-25:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-main-27:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-merged_res-25:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-main-27:/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-merged_res-25:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-main-27:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-merged_res-25:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-main-27:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-merged_res-25:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-main-27:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-merged_res-25:/menu_menu.xml.flat",
+        "source": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-main-27:/menu/menu.xml"
+    },
+    {
+        "merged": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-merged_res-25:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-main-27:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-merged_res-25:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-main-27:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-merged_res-25:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-main-27:/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-merged_res-25:/menu_menu_difficulty.xml.flat",
+        "source": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-main-27:/menu/menu_difficulty.xml"
+    },
+    {
+        "merged": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-merged_res-25:/raw_info.txt.flat",
+        "source": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-main-27:/raw/info.txt"
+    },
+    {
+        "merged": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-merged_res-25:/raw_title.txt.flat",
+        "source": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-main-27:/raw/title.txt"
+    },
+    {
+        "merged": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-merged_res-25:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-main-27:/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-merged_res-25:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-main-27:/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-merged_res-25:/raw_legal.txt.flat",
+        "source": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-main-27:/raw/legal.txt"
+    },
+    {
+        "merged": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-merged_res-25:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-main-27:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-merged_res-25:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-main-27:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-merged_res-25:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-main-27:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-merged_res-25:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-main-27:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-merged_res-25:/layout_fragment_new_game.xml.flat",
+        "source": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-main-27:/layout/fragment_new_game.xml"
+    },
+    {
+        "merged": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-merged_res-25:/raw-de_title.txt.flat",
+        "source": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-main-27:/raw-de/title.txt"
+    },
+    {
+        "merged": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-merged_res-25:/drawable_ic_about.png.flat",
+        "source": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-main-27:/drawable/ic_about.png"
+    },
+    {
+        "merged": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-merged_res-25:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-main-27:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-merged_res-25:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-main-27:/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "de.streblow.gomoku.app-merged_res-25:/raw_info.txt.flat",
+        "source": "de.streblow.gomoku.app-main-27:/raw/info.txt"
+    },
+    {
+        "merged": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-merged_res-25:/raw-de_legal.txt.flat",
+        "source": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-main-27:/raw-de/legal.txt"
+    },
+    {
+        "merged": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-merged_res-25:/xml_backup_rules.xml.flat",
+        "source": "/home/streblow/.gradle/daemon/7.4/de.streblow.gomoku.app-main-27:/xml/backup_rules.xml"
+    }
+]

@@ -22,5 +22,5 @@
     <string name="game_end_xo_won">Spiel beendet! %s hat gewonnen.</string>
     <string name="game_end_player_won">Gutes Spiel! Sie haben gewonnen.</string>
     <string name="game_end_player_lost">Spiel vorbei! Sie haben verloren.</string>
-    <string name="game_end_hint">Choose \'Neues Spiel\' or \'Neustart\' from menu.</string>
+    <string name="game_end_hint">Wählen Sie \'Neues Spiel\' oder \'Neustart\' im Menü.</string>
 </resources>

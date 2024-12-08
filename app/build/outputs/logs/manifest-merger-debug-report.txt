@@ -1,0 +1,228 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml:2:1-30:12
+MERGED from [com.google.android.material:material:1.5.0] /home/streblow/.gradle/caches/8.9/transforms/13f3d413d6fb306ee42daae12c770c1a/transformed/material-1.5.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] /home/streblow/.gradle/caches/8.9/transforms/aad2f11b8511c7323683a2ee46f368ae/transformed/constraintlayout-2.1.3/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.4.1] /home/streblow/.gradle/caches/8.9/transforms/cf435961ef31e791a75fc5030a7a9111/transformed/appcompat-1.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/558180d172ab7d430cdbd77157ca9852/transformed/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.3.6] /home/streblow/.gradle/caches/8.9/transforms/022132af6bac98e8948adfeadca2b88c/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.2.4] /home/streblow/.gradle/caches/8.9/transforms/5ee8e9a9dce3833d70f2bb3e4fa88cd5/transformed/activity-1.2.4/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] /home/streblow/.gradle/caches/8.9/transforms/fe89d44357549a2ae26d002c61210341/transformed/appcompat-resources-1.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/e4151e6e93551cd6b87e7432ff903f27/transformed/emoji2-views-helper-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.emoji2:emoji2:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/b94396e9c87a3f440974d94967b19877/transformed/emoji2-1.0.0/AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/streblow/.gradle/caches/8.9/transforms/0f502e0b8b835dbb1b6f26efd1a62317/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/streblow/.gradle/caches/8.9/transforms/43a21389397008df984784051cd39a6b/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/a98ab41f04f2b70b9136868ddc3c6988/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] /home/streblow/.gradle/caches/8.9/transforms/d904e0cde9e3e43d5d92554f1e6e2ffa/transformed/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/streblow/.gradle/caches/8.9/transforms/30fba741f8e98cb753260dbf350d5148/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/streblow/.gradle/caches/8.9/transforms/ba0144e1eaeacaff4f5b3a717a34c7be/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/10ee40a6142a5042899ff73fe04c5d8b/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/97fac01138fa0ca98836a6c0952c726f/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/d484ffba6ed6b8298693d91d630519be/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/streblow/.gradle/caches/8.9/transforms/6d4ea35faec5ef91dbb4f282b1b6ffbf/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.1.0] /home/streblow/.gradle/caches/8.9/transforms/683e6a8bc3e17246566ffef111d7b2ff/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.7.0] /home/streblow/.gradle/caches/8.9/transforms/283c6955053b0409d4a42c3b73d1925a/transformed/core-1.7.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/b2f415a8e3d9fc654f2084f27bfdaf48/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /home/streblow/.gradle/caches/8.9/transforms/0f026263890254afbcb282debbc29abc/transformed/lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] /home/streblow/.gradle/caches/8.9/transforms/eb9205c6fd528aff95f3996356a608bb/transformed/savedstate-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /home/streblow/.gradle/caches/8.9/transforms/803b083773911e5b0e3ddb0d053148aa/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/49ecf135d4e3d803ddc6d648e8e2d454/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/streblow/.gradle/caches/8.9/transforms/37cbb73f3bb006c5cbb9064d51f4a190/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /home/streblow/.gradle/caches/8.9/transforms/1ff2d4c6c85589284a61d80b3607f1fc/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.startup:startup-runtime:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/deb3042cd19c801f17af9851baa1d738/transformed/startup-runtime-1.0.0/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/b32766fe9136467b1ddd9a20f16926d8/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/streblow/.gradle/caches/8.9/transforms/c4387f481742c17f225e9610c66ab6e8/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /home/streblow/.gradle/caches/8.9/transforms/f3d2437bd9fde39612dc2146ca056dce/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] /home/streblow/.gradle/caches/8.9/transforms/1a4caa841847997e12c9acf510e7184d/transformed/lifecycle-runtime-2.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/streblow/.gradle/caches/8.9/transforms/15d6d13bf94998e7bfd3fc37cc5799c4/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/575019187b8792bebba099b4b4f9269a/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/bc8f8dc3241e5b4ff25b79e96c1014cf/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/2093dc12b474d9b688c7d4994cd0f98a/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/7758a461aa5bb4bfd2794f3c068d3de2/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/streblow/.gradle/caches/8.9/transforms/c7bd361f16f4ee8d0681025caafc1924/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
+	package
+		INJECTED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml:5:5-28:19
+INJECTED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml:5:5-28:19
+MERGED from [com.google.android.material:material:1.5.0] /home/streblow/.gradle/caches/8.9/transforms/13f3d413d6fb306ee42daae12c770c1a/transformed/material-1.5.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.5.0] /home/streblow/.gradle/caches/8.9/transforms/13f3d413d6fb306ee42daae12c770c1a/transformed/material-1.5.0/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] /home/streblow/.gradle/caches/8.9/transforms/aad2f11b8511c7323683a2ee46f368ae/transformed/constraintlayout-2.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] /home/streblow/.gradle/caches/8.9/transforms/aad2f11b8511c7323683a2ee46f368ae/transformed/constraintlayout-2.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.emoji2:emoji2:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/b94396e9c87a3f440974d94967b19877/transformed/emoji2-1.0.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.emoji2:emoji2:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/b94396e9c87a3f440974d94967b19877/transformed/emoji2-1.0.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.core:core:1.7.0] /home/streblow/.gradle/caches/8.9/transforms/283c6955053b0409d4a42c3b73d1925a/transformed/core-1.7.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.7.0] /home/streblow/.gradle/caches/8.9/transforms/283c6955053b0409d4a42c3b73d1925a/transformed/core-1.7.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/streblow/.gradle/caches/8.9/transforms/37cbb73f3bb006c5cbb9064d51f4a190/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/streblow/.gradle/caches/8.9/transforms/37cbb73f3bb006c5cbb9064d51f4a190/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /home/streblow/.gradle/caches/8.9/transforms/1ff2d4c6c85589284a61d80b3607f1fc/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /home/streblow/.gradle/caches/8.9/transforms/1ff2d4c6c85589284a61d80b3607f1fc/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.startup:startup-runtime:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/deb3042cd19c801f17af9851baa1d738/transformed/startup-runtime-1.0.0/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/deb3042cd19c801f17af9851baa1d738/transformed/startup-runtime-1.0.0/AndroidManifest.xml:25:5-31:19
+	android:extractNativeLibs
+		INJECTED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.7.0] /home/streblow/.gradle/caches/8.9/transforms/283c6955053b0409d4a42c3b73d1925a/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml:12:9-35
+	android:label
+		ADDED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml:10:9-41
+	android:fullBackupContent
+		ADDED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml:8:9-54
+	android:roundIcon
+		ADDED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml:11:9-54
+	tools:targetApi
+		ADDED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml:14:9-29
+	android:icon
+		ADDED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml:9:9-43
+	android:allowBackup
+		ADDED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml:13:9-44
+	android:dataExtractionRules
+		ADDED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml:7:9-65
+activity#de.streblow.gomoku.MainActivity
+ADDED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml:15:9-27:20
+	android:exported
+		ADDED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml:17:13-36
+	android:name
+		ADDED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml:16:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml:18:13-22:29
+action#android.intent.action.MAIN
+ADDED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml:19:17-69
+	android:name
+		ADDED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml:19:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml:21:17-77
+	android:name
+		ADDED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml:21:27-74
+meta-data#android.app.lib_name
+ADDED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml:24:13-26:36
+	android:value
+		ADDED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml:26:17-33
+	android:name
+		ADDED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml:25:17-52
+uses-sdk
+INJECTED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml
+INJECTED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.5.0] /home/streblow/.gradle/caches/8.9/transforms/13f3d413d6fb306ee42daae12c770c1a/transformed/material-1.5.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.5.0] /home/streblow/.gradle/caches/8.9/transforms/13f3d413d6fb306ee42daae12c770c1a/transformed/material-1.5.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] /home/streblow/.gradle/caches/8.9/transforms/aad2f11b8511c7323683a2ee46f368ae/transformed/constraintlayout-2.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] /home/streblow/.gradle/caches/8.9/transforms/aad2f11b8511c7323683a2ee46f368ae/transformed/constraintlayout-2.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.4.1] /home/streblow/.gradle/caches/8.9/transforms/cf435961ef31e791a75fc5030a7a9111/transformed/appcompat-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.4.1] /home/streblow/.gradle/caches/8.9/transforms/cf435961ef31e791a75fc5030a7a9111/transformed/appcompat-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/558180d172ab7d430cdbd77157ca9852/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/558180d172ab7d430cdbd77157ca9852/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /home/streblow/.gradle/caches/8.9/transforms/022132af6bac98e8948adfeadca2b88c/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /home/streblow/.gradle/caches/8.9/transforms/022132af6bac98e8948adfeadca2b88c/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] /home/streblow/.gradle/caches/8.9/transforms/5ee8e9a9dce3833d70f2bb3e4fa88cd5/transformed/activity-1.2.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] /home/streblow/.gradle/caches/8.9/transforms/5ee8e9a9dce3833d70f2bb3e4fa88cd5/transformed/activity-1.2.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] /home/streblow/.gradle/caches/8.9/transforms/fe89d44357549a2ae26d002c61210341/transformed/appcompat-resources-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] /home/streblow/.gradle/caches/8.9/transforms/fe89d44357549a2ae26d002c61210341/transformed/appcompat-resources-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/e4151e6e93551cd6b87e7432ff903f27/transformed/emoji2-views-helper-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/e4151e6e93551cd6b87e7432ff903f27/transformed/emoji2-views-helper-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/b94396e9c87a3f440974d94967b19877/transformed/emoji2-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.emoji2:emoji2:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/b94396e9c87a3f440974d94967b19877/transformed/emoji2-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/streblow/.gradle/caches/8.9/transforms/0f502e0b8b835dbb1b6f26efd1a62317/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/streblow/.gradle/caches/8.9/transforms/0f502e0b8b835dbb1b6f26efd1a62317/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/streblow/.gradle/caches/8.9/transforms/43a21389397008df984784051cd39a6b/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/streblow/.gradle/caches/8.9/transforms/43a21389397008df984784051cd39a6b/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/a98ab41f04f2b70b9136868ddc3c6988/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/a98ab41f04f2b70b9136868ddc3c6988/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] /home/streblow/.gradle/caches/8.9/transforms/d904e0cde9e3e43d5d92554f1e6e2ffa/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /home/streblow/.gradle/caches/8.9/transforms/d904e0cde9e3e43d5d92554f1e6e2ffa/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/streblow/.gradle/caches/8.9/transforms/30fba741f8e98cb753260dbf350d5148/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/streblow/.gradle/caches/8.9/transforms/30fba741f8e98cb753260dbf350d5148/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/streblow/.gradle/caches/8.9/transforms/ba0144e1eaeacaff4f5b3a717a34c7be/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/streblow/.gradle/caches/8.9/transforms/ba0144e1eaeacaff4f5b3a717a34c7be/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/10ee40a6142a5042899ff73fe04c5d8b/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/10ee40a6142a5042899ff73fe04c5d8b/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/97fac01138fa0ca98836a6c0952c726f/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/97fac01138fa0ca98836a6c0952c726f/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/d484ffba6ed6b8298693d91d630519be/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/d484ffba6ed6b8298693d91d630519be/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/streblow/.gradle/caches/8.9/transforms/6d4ea35faec5ef91dbb4f282b1b6ffbf/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/streblow/.gradle/caches/8.9/transforms/6d4ea35faec5ef91dbb4f282b1b6ffbf/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /home/streblow/.gradle/caches/8.9/transforms/683e6a8bc3e17246566ffef111d7b2ff/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /home/streblow/.gradle/caches/8.9/transforms/683e6a8bc3e17246566ffef111d7b2ff/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.7.0] /home/streblow/.gradle/caches/8.9/transforms/283c6955053b0409d4a42c3b73d1925a/transformed/core-1.7.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.7.0] /home/streblow/.gradle/caches/8.9/transforms/283c6955053b0409d4a42c3b73d1925a/transformed/core-1.7.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/b2f415a8e3d9fc654f2084f27bfdaf48/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/b2f415a8e3d9fc654f2084f27bfdaf48/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /home/streblow/.gradle/caches/8.9/transforms/0f026263890254afbcb282debbc29abc/transformed/lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /home/streblow/.gradle/caches/8.9/transforms/0f026263890254afbcb282debbc29abc/transformed/lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /home/streblow/.gradle/caches/8.9/transforms/eb9205c6fd528aff95f3996356a608bb/transformed/savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /home/streblow/.gradle/caches/8.9/transforms/eb9205c6fd528aff95f3996356a608bb/transformed/savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /home/streblow/.gradle/caches/8.9/transforms/803b083773911e5b0e3ddb0d053148aa/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /home/streblow/.gradle/caches/8.9/transforms/803b083773911e5b0e3ddb0d053148aa/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/49ecf135d4e3d803ddc6d648e8e2d454/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/49ecf135d4e3d803ddc6d648e8e2d454/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/streblow/.gradle/caches/8.9/transforms/37cbb73f3bb006c5cbb9064d51f4a190/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/streblow/.gradle/caches/8.9/transforms/37cbb73f3bb006c5cbb9064d51f4a190/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /home/streblow/.gradle/caches/8.9/transforms/1ff2d4c6c85589284a61d80b3607f1fc/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /home/streblow/.gradle/caches/8.9/transforms/1ff2d4c6c85589284a61d80b3607f1fc/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/deb3042cd19c801f17af9851baa1d738/transformed/startup-runtime-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/deb3042cd19c801f17af9851baa1d738/transformed/startup-runtime-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/b32766fe9136467b1ddd9a20f16926d8/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/b32766fe9136467b1ddd9a20f16926d8/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/streblow/.gradle/caches/8.9/transforms/c4387f481742c17f225e9610c66ab6e8/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/streblow/.gradle/caches/8.9/transforms/c4387f481742c17f225e9610c66ab6e8/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /home/streblow/.gradle/caches/8.9/transforms/f3d2437bd9fde39612dc2146ca056dce/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /home/streblow/.gradle/caches/8.9/transforms/f3d2437bd9fde39612dc2146ca056dce/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] /home/streblow/.gradle/caches/8.9/transforms/1a4caa841847997e12c9acf510e7184d/transformed/lifecycle-runtime-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] /home/streblow/.gradle/caches/8.9/transforms/1a4caa841847997e12c9acf510e7184d/transformed/lifecycle-runtime-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/streblow/.gradle/caches/8.9/transforms/15d6d13bf94998e7bfd3fc37cc5799c4/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/streblow/.gradle/caches/8.9/transforms/15d6d13bf94998e7bfd3fc37cc5799c4/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/575019187b8792bebba099b4b4f9269a/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/575019187b8792bebba099b4b4f9269a/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/bc8f8dc3241e5b4ff25b79e96c1014cf/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/bc8f8dc3241e5b4ff25b79e96c1014cf/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/2093dc12b474d9b688c7d4994cd0f98a/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/2093dc12b474d9b688c7d4994cd0f98a/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/7758a461aa5bb4bfd2794f3c068d3de2/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/7758a461aa5bb4bfd2794f3c068d3de2/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/streblow/.gradle/caches/8.9/transforms/c7bd361f16f4ee8d0681025caafc1924/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/streblow/.gradle/caches/8.9/transforms/c7bd361f16f4ee8d0681025caafc1924/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+	android:targetSdkVersion
+		INJECTED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/b94396e9c87a3f440974d94967b19877/transformed/emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /home/streblow/.gradle/caches/8.9/transforms/1ff2d4c6c85589284a61d80b3607f1fc/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /home/streblow/.gradle/caches/8.9/transforms/1ff2d4c6c85589284a61d80b3607f1fc/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.startup:startup-runtime:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/deb3042cd19c801f17af9851baa1d738/transformed/startup-runtime-1.0.0/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/deb3042cd19c801f17af9851baa1d738/transformed/startup-runtime-1.0.0/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/b94396e9c87a3f440974d94967b19877/transformed/emoji2-1.0.0/AndroidManifest.xml:30:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/b94396e9c87a3f440974d94967b19877/transformed/emoji2-1.0.0/AndroidManifest.xml:28:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/b94396e9c87a3f440974d94967b19877/transformed/emoji2-1.0.0/AndroidManifest.xml:29:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/b94396e9c87a3f440974d94967b19877/transformed/emoji2-1.0.0/AndroidManifest.xml:27:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/b94396e9c87a3f440974d94967b19877/transformed/emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/b94396e9c87a3f440974d94967b19877/transformed/emoji2-1.0.0/AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/b94396e9c87a3f440974d94967b19877/transformed/emoji2-1.0.0/AndroidManifest.xml:32:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] /home/streblow/.gradle/caches/8.9/transforms/1ff2d4c6c85589284a61d80b3607f1fc/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] /home/streblow/.gradle/caches/8.9/transforms/1ff2d4c6c85589284a61d80b3607f1fc/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] /home/streblow/.gradle/caches/8.9/transforms/1ff2d4c6c85589284a61d80b3607f1fc/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78

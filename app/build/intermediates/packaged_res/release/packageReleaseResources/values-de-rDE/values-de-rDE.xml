@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about_title">Über</string>
+    <string name="action_about">Über</string>
+    <string name="action_difficulty">Schwierigkeit</string>
+    <string name="action_difficulty_easy">Leicht</string>
+    <string name="action_difficulty_hard">Schwer</string>
+    <string name="action_difficulty_medium">Mittel</string>
+    <string name="action_new_game">Neues Spiel</string>
+    <string name="action_rematch">Neustart</string>
+    <string name="action_undo">Rückgängig</string>
+    <string name="game_end_hint">Wählen Sie \'Neues Spiel\' oder \'Neustart\' im Menü.</string>
+    <string name="game_end_player_lost">Spiel vorbei! Sie haben verloren.</string>
+    <string name="game_end_player_won">Gutes Spiel! Sie haben gewonnen.</string>
+    <string name="game_end_tie">Letztlich: Unentschieden.</string>
+    <string name="game_end_xo_won">Spiel beendet! %s hat gewonnen.</string>
+    <string name="new_game_difficulty">Schwierigkeit</string>
+    <string name="new_game_difficulty_easy">Leicht</string>
+    <string name="new_game_difficulty_hard">Schwer</string>
+    <string name="new_game_difficulty_medium">Mittel</string>
+    <string name="new_game_mode">Spielmodus</string>
+    <string name="new_game_mode_multi_player">Zwei Spieler</string>
+    <string name="new_game_mode_single_player_first">Spieler zuerst</string>
+    <string name="new_game_mode_single_player_second">Engine zuerst</string>
+    <string name="new_game_title">Neues Spiel</string>
+</resources>
