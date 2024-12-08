@@ -24,7 +24,7 @@ Sie k&ouml;nnen es mit AndroidStudio &uuml;bersetzen, oder aber die APK im app-O
 <br>
 Gomoku ist eine einfache App für eine schnelle Partie eines Five-In-A-Row-Spiels.<br>
 Sie k&ouml;nnen zwischen drei Schwierigkeitsgraden w&auml;hlen:<br>
-Einfach - ein Level f&uuml;r Anf&auml;nger, die nach etwas &Uuml;bung gewinnen k&ouml;nnen sollten<br>
+Einfach - ein Anf&auml;nger-Level, in dem Sie nach etwas &Uuml;bung gewinnen k&ouml;nnen sollten<br>
 Mittel - Sie m&uuml;ssen sehr konzentriert spielen, um in diesem Level zu gewinnen<br>
 Schwer - die App wird sehr aggressiv verteidigen und jeden Ihrer Fehler ausnutzen<br>
 <br>
