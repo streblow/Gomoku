@@ -13,7 +13,7 @@
 12        android:allowBackup="true"
 12-->/home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.7.0] /home/streblow/.gradle/caches/8.9/transforms/283c6955053b0409d4a42c3b73d1925a/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+13-->[androidx.core:core:1.7.0] /home/streblow/.gradle/caches/8.9/transforms/f583c03cbe649eac199c7dd4d2bfbec6/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
 14        android:dataExtractionRules="@xml/data_extraction_rules"
 14-->/home/streblow/AndroidStudioProjects/Gomoku/app/src/main/AndroidManifest.xml:7:9-65
 15        android:debuggable="true"
@@ -57,25 +57,25 @@
 36        </activity>
 37
 38        <provider
-38-->[androidx.emoji2:emoji2:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/b94396e9c87a3f440974d94967b19877/transformed/emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+38-->[androidx.emoji2:emoji2:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/6f082eacda83b84f08bfde09a08aeff4/transformed/emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
 39            android:name="androidx.startup.InitializationProvider"
-39-->[androidx.emoji2:emoji2:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/b94396e9c87a3f440974d94967b19877/transformed/emoji2-1.0.0/AndroidManifest.xml:27:13-67
+39-->[androidx.emoji2:emoji2:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/6f082eacda83b84f08bfde09a08aeff4/transformed/emoji2-1.0.0/AndroidManifest.xml:27:13-67
 40            android:authorities="de.streblow.gomoku.androidx-startup"
-40-->[androidx.emoji2:emoji2:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/b94396e9c87a3f440974d94967b19877/transformed/emoji2-1.0.0/AndroidManifest.xml:28:13-68
+40-->[androidx.emoji2:emoji2:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/6f082eacda83b84f08bfde09a08aeff4/transformed/emoji2-1.0.0/AndroidManifest.xml:28:13-68
 41            android:exported="false" >
-41-->[androidx.emoji2:emoji2:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/b94396e9c87a3f440974d94967b19877/transformed/emoji2-1.0.0/AndroidManifest.xml:29:13-37
+41-->[androidx.emoji2:emoji2:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/6f082eacda83b84f08bfde09a08aeff4/transformed/emoji2-1.0.0/AndroidManifest.xml:29:13-37
 42            <meta-data
-42-->[androidx.emoji2:emoji2:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/b94396e9c87a3f440974d94967b19877/transformed/emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+42-->[androidx.emoji2:emoji2:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/6f082eacda83b84f08bfde09a08aeff4/transformed/emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
 43                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-43-->[androidx.emoji2:emoji2:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/b94396e9c87a3f440974d94967b19877/transformed/emoji2-1.0.0/AndroidManifest.xml:32:17-75
+43-->[androidx.emoji2:emoji2:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/6f082eacda83b84f08bfde09a08aeff4/transformed/emoji2-1.0.0/AndroidManifest.xml:32:17-75
 44                android:value="androidx.startup" />
-44-->[androidx.emoji2:emoji2:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/b94396e9c87a3f440974d94967b19877/transformed/emoji2-1.0.0/AndroidManifest.xml:33:17-49
+44-->[androidx.emoji2:emoji2:1.0.0] /home/streblow/.gradle/caches/8.9/transforms/6f082eacda83b84f08bfde09a08aeff4/transformed/emoji2-1.0.0/AndroidManifest.xml:33:17-49
 45            <meta-data
-45-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/streblow/.gradle/caches/8.9/transforms/1ff2d4c6c85589284a61d80b3607f1fc/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+45-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/streblow/.gradle/caches/8.9/transforms/453b2b919768e546506918b5cdf2f2c6/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
 46                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-46-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/streblow/.gradle/caches/8.9/transforms/1ff2d4c6c85589284a61d80b3607f1fc/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+46-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/streblow/.gradle/caches/8.9/transforms/453b2b919768e546506918b5cdf2f2c6/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
 47                android:value="androidx.startup" />
-47-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/streblow/.gradle/caches/8.9/transforms/1ff2d4c6c85589284a61d80b3607f1fc/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+47-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/streblow/.gradle/caches/8.9/transforms/453b2b919768e546506918b5cdf2f2c6/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
 48        </provider>
 49    </application>
 50

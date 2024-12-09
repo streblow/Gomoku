@@ -1,6 +1,6 @@
 <h2>Gomoku</h2>
 <b>Version 1.0 (Build 1)</b><br>
-&#169; 2024-12-08 Lars Streblow<br>
+&#169; 2024-12-09 Lars Streblow<br>
 <br>
 streblow.github.io<br>
 lars.streblow@gmx.de

@@ -4,7 +4,7 @@
             "outputFile": "de.streblow.gomoku.app-mergeDebugResources-22:/values-watch-v21/values-watch-v21.xml",
             "map": [
                 {
-                    "source": "/home/streblow/.gradle/caches/8.9/transforms/cf435961ef31e791a75fc5030a7a9111/transformed/appcompat-1.4.1/res/values-watch-v21/values-watch-v21.xml",
+                    "source": "/home/streblow/.gradle/caches/8.9/transforms/855b796a2c95f067c63dbdf5d4b105a8/transformed/appcompat-1.4.1/res/values-watch-v21/values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",
