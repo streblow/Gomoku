@@ -2,6 +2,9 @@ package de.streblow.gomoku;
 
 import android.util.Log;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class AI {
 
     private final int maxDepth;
@@ -55,6 +58,7 @@ public class AI {
         // check all the possible position within boundary
         Log.d("AI Level", "AI Level : " + aiLevel);
         boolean isBreak = false;
+        List<String> movesWithSameEvaluation = new ArrayList<String>();
         for (int i = rMin; i <= rMax; i++) {
             if (isBreak) break;
             for (int j = cMin; j <= cMax; j++) {
@@ -81,10 +85,21 @@ public class AI {
                     // attack should be valued more, because attack can make winning chain faster
                     int sumMoveValueTemp = 2 * attackValueTemp + protectValueTemp;
 
-                    // update the maximum move
+                    // update the maximum move, if current move is better
                     if (sumMoveValue < sumMoveValueTemp) {
                         sumMoveValue = sumMoveValueTemp;
                         finalMove = i + "," + j;
+                        movesWithSameEvaluation.clear();
+                        movesWithSameEvaluation.add(finalMove);
+                    }
+                    // update the maximum move from all moves with the same value
+                    // using same probability for all of the moves
+                    else if(sumMoveValue == sumMoveValueTemp) {
+                        String currentMove = i + "," + j;
+                        movesWithSameEvaluation.add(currentMove);
+                        if(Math.random() < 1.0d / (double)movesWithSameEvaluation.size()) {
+                            finalMove = currentMove;
+                        }
                     }
                 }
             }
@@ -656,7 +671,7 @@ public class AI {
     }
 
     // This gives the pattern in the given spot
-    // (dr, dc) : (0, 1) -> horizontal, (0, 1) -> vertical,
+    // (dr, dc) : (0, 1) -> horizontal, (1, 0) -> vertical,
     // (1, 1) -> diagonal left to right, (1, -1) -> diagonal right to left
     private String getPattern(BoardState state, int row, int col, int dr, int dc, char turn) {
         // set the current stone as center

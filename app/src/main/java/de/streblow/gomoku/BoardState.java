@@ -74,6 +74,7 @@ public class BoardState {
     }
 
     public void setIsFirstMoveTrue() { isFirstMove = true;}
+
     public void setIsFirstMoveFalse() {
         isFirstMove = false;
     }
