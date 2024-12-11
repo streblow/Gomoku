@@ -169,7 +169,7 @@ public class MainActivity extends AppCompatActivity {
             boardState.setAILevel(3);
             item.setChecked(true);
             difficultyMenu.findItem(R.id.action_difficulty_easy).setChecked(false);
-            difficultyMenu.findItem(R.id.action_difficulty_hard).setChecked(false);
+            difficultyMenu.findItem(R.id.action_difficulty_medium).setChecked(false);
         }
         else if(item.getItemId() == R.id.action_about) {
             AboutDialog about = new AboutDialog(this);

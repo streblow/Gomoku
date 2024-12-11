@@ -35,8 +35,8 @@ public class AI {
     public String search(BoardState state, int maxDepth) {
         String bestMove = null;
 
-        // check if AI goes first. If so, AI should put the stone in the center
-        // AI evaluate the move based on other stones, so at the first move, this is necessary
+        // check if AI goes first, if so, AI always puts the stone in the center
+        // AI evaluates the move based on other stones, so at the first move there are no stones, so this is necessary
         if(state.getIsFirstMove()) {
             int center = state.getBoardSize()/2;
             if(state.isLegalMove(center,center)) {
@@ -52,15 +52,13 @@ public class AI {
         int cMin = state.getMinCol() > 0 ? state.getMinCol() - 1 : state.getMinCol();
 
         // keep track of the best move
+        List<String> movesWithSameEvaluation = new ArrayList<String>();
         int sumMoveValue = 0;
         String finalMove = null;
 
         // check all the possible position within boundary
         Log.d("AI Level", "AI Level : " + aiLevel);
-        boolean isBreak = false;
-        List<String> movesWithSameEvaluation = new ArrayList<String>();
         for (int i = rMin; i <= rMax; i++) {
-            if (isBreak) break;
             for (int j = cMin; j <= cMax; j++) {
                 if (state.isLegalMove(i, j)) {
                     int attackValueTemp = 0;
@@ -88,22 +86,20 @@ public class AI {
                     // update the maximum move, if current move is better
                     if (sumMoveValue < sumMoveValueTemp) {
                         sumMoveValue = sumMoveValueTemp;
-                        finalMove = i + "," + j;
+                        String currentMove = i + "," + j;
                         movesWithSameEvaluation.clear();
-                        movesWithSameEvaluation.add(finalMove);
+                        movesWithSameEvaluation.add(currentMove);
                     }
                     // update the maximum move from all moves with the same value
-                    // using same probability for all of the moves
+                    // randomly selecting one of them
                     else if(sumMoveValue == sumMoveValueTemp) {
                         String currentMove = i + "," + j;
                         movesWithSameEvaluation.add(currentMove);
-                        if(Math.random() < 1.0d / (double)movesWithSameEvaluation.size()) {
-                            finalMove = currentMove;
-                        }
                     }
                 }
             }
         }
+        finalMove = movesWithSameEvaluation.get((int)(Math.random() * (double)movesWithSameEvaluation.size()));
         return finalMove;
     }
 
@@ -133,7 +129,7 @@ public class AI {
             if (isBreak) break;
             for (int j = cMin; j <= cMax; j++) {
                 if (state.isLegalMove(i, j)) {
-                    int temp = minValue2(state.applyMove(i, j), maxDepth,maxDepth - 1, alpha, beta, i, j);
+                    int temp = minValue2(state.applyMove(i, j), maxDepth, maxDepth - 1, alpha, beta, i, j);
                     v = Math.max(v, temp);
 
                     if (v > alpha) {
