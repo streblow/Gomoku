@@ -23,8 +23,10 @@ public class AI {
 
     public void move(BoardState state) {
         counter++;
-        move = search(state, maxDepth);
-//        move = search2(state, maxDepth); // for future min-max algorithm
+        if(aiLevel <= 3)
+            move = search(state, maxDepth); // default board evaluation without descending moves
+        else
+            move = search_minmax(state, maxDepth); // a min-max algorithm for board evaluation
     }
 
     public String getMove() {
@@ -103,8 +105,8 @@ public class AI {
         return finalMove;
     }
 
-    // potential min-max with alpha-beta pruning for future reference to make AI even stronger
-    public String search2(BoardState state, int maxDepth) {
+    // potential min-max with alpha-beta pruning to make AI even stronger
+    public String search_minmax(BoardState state, int maxDepth) {
         int v = Integer.MIN_VALUE;
         int alpha = Integer.MIN_VALUE;
         int beta = Integer.MAX_VALUE;
@@ -235,14 +237,14 @@ public class AI {
 
         String normal4A = " "+turn+""+turn+""+turn+""+turn;
         String normal4B = turn+""+turn+""+turn+""+turn+" ";
-        if(horizontal.contains(normal4A))    eval+= 1000;
-        if(vertical.contains(normal4A))      eval+= 1000;
-        if(diagonalLTR.contains(normal4A))   eval+= 1000;
-        if(diagonalRTL.contains(normal4A))   eval+= 1000;
-        if(horizontal.contains(normal4B))    eval+= 1000;
-        if(vertical.contains(normal4B))      eval+= 1000;
-        if(diagonalLTR.contains(normal4B))   eval+= 1000;
-        if(diagonalRTL.contains(normal4B))   eval+= 1000;
+        if(horizontal.contains(normal4A))    eval+= 2000;
+        if(vertical.contains(normal4A))      eval+= 2000;
+        if(diagonalLTR.contains(normal4A))   eval+= 2000;
+        if(diagonalRTL.contains(normal4A))   eval+= 2000;
+        if(horizontal.contains(normal4B))    eval+= 2000;
+        if(vertical.contains(normal4B))      eval+= 2000;
+        if(diagonalLTR.contains(normal4B))   eval+= 2000;
+        if(diagonalRTL.contains(normal4B))   eval+= 2000;
 
         String row3 = " "+turn+""+turn+""+turn+" ";
         if(horizontal.contains(row3))   eval+= 1000;

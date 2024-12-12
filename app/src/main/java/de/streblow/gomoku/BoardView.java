@@ -34,7 +34,7 @@ public class BoardView extends View {
 
         // lines
         gridPaint = new Paint();
-        gridPaint.setColor(Color.argb(0xff,0xaf,0xaf,0xff));
+        gridPaint.setColor(Color.argb(0xff,0xa0,0xa0,0xf0));
         gridPaint.setStyle(Paint.Style.FILL);
 
         // 'O' shape and 'X' shape
@@ -80,7 +80,7 @@ public class BoardView extends View {
         lineThick = LINE_THICK;
         strokeWidth = STROKE_WIDTH;
         if(width > 400) {
-            lineThick = LINE_THICK + 1;
+            lineThick = LINE_THICK + 2;
             strokeWidth = STROKE_WIDTH + 4;
         }
         oPaint.setStrokeWidth(strokeWidth);
