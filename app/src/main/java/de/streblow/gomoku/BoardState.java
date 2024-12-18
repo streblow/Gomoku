@@ -1,12 +1,11 @@
 package de.streblow.gomoku;
 
-import android.util.Log;
 import java.util.StringTokenizer;
 
 public class BoardState {
 
+    int wChain = 5; // number of winning stones (e.g. 5 for 5-In-A-Row)
     int boardSize;
-    int wChain;
     char[][] board;
     int lastMoveX, lastMoveY;
     boolean gameOver;
@@ -15,19 +14,16 @@ public class BoardState {
     private char currentPlayer;
     private AI ai;
     private boolean isFirstMove = false;
-
-    private int maxRow;  // I define them to narrow down search space
-    private int minRow;
-    private int maxCol;  // usually starting from center and it exclude
-    private int minCol;
-    private int counter = 0;
+    private int maxRow; // bottom most occupied position
+    private int minRow; // top most occupied position
+    private int maxCol; // right most occupied position
+    private int minCol; // left most occupied position
     private boolean isMultiPlayer = false;
     private String[] moves;
     private int moveCounter = 0;
 
-    public BoardState(int boardSize, int wChain, int aiLevel, int maxDepth) {
+    public BoardState(int boardSize, int aiLevel, int maxDepth) {
         this.boardSize = boardSize;
-        this.wChain = wChain;
         board = new char[boardSize][boardSize];
         lastMoveX = -1;
         lastMoveY = -1;
@@ -46,11 +42,10 @@ public class BoardState {
     // AI creates virtual state so that it won't change the current state.
     public BoardState(BoardState other) {
         this.boardSize = other.boardSize;
-        this.wChain = other.wChain;
         this.board = new char[boardSize][boardSize];
         this.isFirstMove = other.isFirstMove;
-        for (int i = 0; i < boardSize; i++) {
-            for (int j = 0; j < boardSize; j++) {
+        for(int i = 0; i < boardSize; i++) {
+            for(int j = 0; j < boardSize; j++) {
                 this.board[i][j] = other.board[i][j];
             }
         }
@@ -119,7 +114,7 @@ public class BoardState {
         return currentPlayer;
     }
 
-    // This method is called every single move that whether user/AI makes a move
+    // This method is called every single move that whether user/AI makes.
     public boolean move(int row, int col) {
         board[row][col] = currentPlayer;
         maxRow = Math.max(maxRow, row);
@@ -135,12 +130,11 @@ public class BoardState {
         moves[moveCounter] = row + "," + col;
         moveCounter++;
         changeTurn();
-        counter++;
         return false;
     }
 
-    // this method creates the new board using copy constructor and apply the move
-    // this doesn't affect the actual board state that user can see.
+    // This method creates the new board using copy constructor and applies the move.
+    // This doesn't affect the current board state.
     public BoardState applyMove(int row, int col) {
         BoardState afterMove = new BoardState(this);
         afterMove.setCurrentPlayer(currentPlayer);
@@ -157,7 +151,7 @@ public class BoardState {
     // check whether the game ended or not
     // (dr, dc) : (0, 1) -> horizontal, (0, 1) -> vertical,
     // (1, 1) -> diagonal left to right, (1, -1) -> diagonal right to left
-    // from center stone, check positive side and negative side
+    // from center stone at (row, col), check positive side and negative side
     public boolean isEnded(int row, int col, int dr, int dc) {
         int count  = 1; // center stone should be also counted
         int r = row + dr;
@@ -188,7 +182,7 @@ public class BoardState {
         return false;
     }
 
-    // This calls AI to find the best move
+    // This calls AI to find the best move.
     public boolean aiMove() {
         ai.move(this);
         String stringMove = ai.getMove();
@@ -231,8 +225,6 @@ public class BoardState {
             }
         }
         return true;
-        // has a problem when user push undo
-//        return counter == boardSize * boardSize;
     }
 
     public void setIsMultiPlayer() {
@@ -243,8 +235,8 @@ public class BoardState {
         return isMultiPlayer;
     }
 
-    // This class is called when the user click unmove button
-    // moves keep track of the history of moves
+    // This method is called when the user wants to undo his move
+    // The moves-array keep track of the history of moves.
     public void unMove() {
         lastMoveX = -1;
         lastMoveY = -1;

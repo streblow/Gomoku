@@ -349,7 +349,7 @@ public class AI {
         return turn == state.getAiTurn() ? eval+5 : -(eval+5);
     }
 
-    // Evaluation for level 3. This may be edited in the future
+    // Evaluation for level 3
     private int evaluate3(BoardState state, int row, int col, char turn) {
         String horizontal = "A" + getPattern(state, row, col, 0, 1, turn) + "A";
         String vertical = "A" + getPattern(state, row, col, 1, 0, turn) + "A";
@@ -408,25 +408,21 @@ public class AI {
         int thread3 = 0;
         if(horizontal.contains(row3))   {
             if(thread4) eval += 1000000;
-//            else if(thread3) eval += 100000;
             eval+= 5000;
             thread3++;
         }
         if(vertical.contains(row3))     {
             if(thread4) eval += 1000000;
-//            else if(thread3) eval += 100000;
             eval+= 5000;
             thread3++;
         }
         if(diagonalLTR.contains(row3))  {
             if(thread4) eval += 1000000;
-//            else if(thread3) eval += 100000;
             eval+= 5000;
             thread3++;
         }
         if(diagonalRTL.contains(row3))  {
             if(thread4) eval += 1000000;
-//            else if(thread3) eval += 100000;
             eval+= 5000;
             thread3++;
         }
@@ -436,49 +432,41 @@ public class AI {
         int threadBroken3 = 0;
         if(horizontal.contains(broken3T1))   {
             if(thread4) eval += 1000000;
-//            else if(thread3) eval += 100000;
             eval+= 1500;
             threadBroken3++;
         }
         if(vertical.contains(broken3T1))     {
             if(thread4) eval += 1000000;
-//            else if(thread3) eval += 100000;
             eval+= 1500;
             threadBroken3++;
         }
         if(diagonalLTR.contains(broken3T1))  {
             if(thread4) eval += 1000000;
-//            else if(thread3) eval += 100000;
             eval+= 1500;
             threadBroken3++;
         }
         if(diagonalRTL.contains(broken3T1))  {
             if(thread4) eval += 1000000;
-//            else if(thread3) eval += 100000;
             eval+= 1500;
             threadBroken3++;
         }
         if(horizontal.contains(broken3T2))   {
             if(thread4) eval += 1000000;
-//            else if(thread3) eval += 100000;
             eval+= 1500;
             threadBroken3++;
         }
         if(vertical.contains(broken3T2))     {
             if(thread4) eval += 1000000;
-//            else if(thread3) eval += 100000;
             eval+= 1500;
             threadBroken3++;
         }
         if(diagonalLTR.contains(broken3T2))  {
             if(thread4) eval += 1000000;
-//            else if(thread3) eval += 100000;
             eval+= 1500;
             threadBroken3++;
         }
         if(diagonalRTL.contains(broken3T2))  {
             if(thread4) eval += 1000000;
-//            else if(thread3) eval += 100000;
             eval+= 1500;
             threadBroken3++;
         }
@@ -489,112 +477,6 @@ public class AI {
             eval+= 80000;
         else if(threadBroken3 > 1)
             eval+= 50000;
-
-//        String normal3A = " " + turn + turn + turn + "A";
-//        String normal3B = "A" + turn + turn + turn + " ";
-//        if(horizontal.contains(normal3A))   {
-////            if(thread4) eval += 10000;
-//            eval+= 500;
-//        }
-//        if(vertical.contains(normal3A))     {
-////            if(thread4) eval += 10000;
-//            eval+= 500;
-//        }
-//        if(diagonalLTR.contains(normal3A))  {
-////            if(thread4) eval += 10000;
-//            eval+= 500;
-//        }
-//        if(diagonalRTL.contains(normal3A))  {
-////            if(thread4) eval += 10000;
-//            eval+= 500;
-//        }
-//        if(horizontal.contains(normal3B))   {
-////            if(thread4) eval += 10000;
-//            eval+= 500;
-//        }
-//        if(vertical.contains(normal3B))     {
-////            if(thread4) eval += 10000;
-//            eval+= 500;
-//        }
-//        if(diagonalLTR.contains(normal3B))  {
-////            if(thread4) eval += 10000;
-//            eval+= 500;
-//        }
-//        if(diagonalRTL.contains(normal3B))  {
-////            if(thread4) eval += 10000;
-//            eval+= 500;
-//        }
-
-//        String broken3A = " " + turn + turn + " " + turn + 'A';
-//        String broken3B = "A" + turn + turn + " " + turn + " ";
-//        String broken3C = " " + turn + " "  + turn+ turn + 'A';
-//        String broken3D = "A"+ turn + " " + turn + turn + " ";
-//
-//        if(horizontal.contains(broken3A))   {
-////            if(thread4) eval += 10000;
-//            eval+= 400;
-//        }
-//        if(vertical.contains(broken3A))     {
-////            if(thread4) eval += 10000;
-//            eval+= 400;
-//        }
-//        if(diagonalLTR.contains(broken3A))  {
-////            if(thread4) eval += 10000;
-//            eval+= 400;
-//        }
-//        if(diagonalRTL.contains(broken3A))  {
-////            if(thread4) eval += 10000;
-//            eval+= 400;
-//        }
-//        if(horizontal.contains(broken3B))   {
-////            if(thread4) eval += 10000;
-//            eval+= 400;
-//        }
-//        if(vertical.contains(broken3B))     {
-////            if(thread4) eval += 10000;
-//            eval+= 400;
-//        }
-//        if(diagonalLTR.contains(broken3B))  {
-////            if(thread4) eval += 10000;
-//            eval+= 400;
-//        }
-//        if(diagonalRTL.contains(broken3B))  {
-////            if(thread4) eval += 10000;
-//            eval+= 400;
-//        }
-//
-//        if(horizontal.contains(broken3C))   {
-////            if(thread4) eval += 10000;
-//            eval+= 400;
-//        }
-//        if(vertical.contains(broken3C))     {
-////            if(thread4) eval += 10000;
-//            eval+= 400;
-//        }
-//        if(diagonalLTR.contains(broken3C))  {
-////            if(thread4) eval += 10000;
-//            eval+= 400;
-//        }
-//        if(diagonalRTL.contains(broken3C))  {
-////            if(thread4) eval += 10000;
-//            eval+= 400;
-//        }
-//        if(horizontal.contains(broken3D))   {
-////            if(thread4) eval += 10000;
-//            eval+= 400;
-//        }
-//        if(vertical.contains(broken3D))     {
-////            if(thread4) eval += 10000;
-//            eval+= 400;
-//        }
-//        if(diagonalLTR.contains(broken3D))  {
-////            if(thread4) eval += 10000;
-//            eval+= 400;
-//        }
-//        if(diagonalRTL.contains(broken3D))  {
-////            if(thread4) eval += 10000;
-//            eval+= 400;
-//        }
 
         // implement it to detect edge
         int i;
@@ -670,7 +552,7 @@ public class AI {
 
     // This gives the pattern in the given spot
     // (dr, dc) : (0, 1) -> horizontal, (1, 0) -> vertical,
-    // (1, 1) -> diagonal left to right, (1, -1) -> diagonal right to left
+    // (1, 1) -> diagonal left to right descending, (1, -1) -> diagonal left to right ascending
     private String getPattern(BoardState state, int row, int col, int dr, int dc, char turn) {
         // set the current stone as center
         int r = row + dr;

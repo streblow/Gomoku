@@ -22,13 +22,12 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity {
 
     private BoardView boardView;
-    private boolean gameOver;
     private BoardState boardState;
-    private SubMenu difficultyMenu;
-
     private char userTurn;
     private int boardSize;
     private int aiLevel;
+    private boolean gameOver;
+    private SubMenu difficultyMenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,14 +41,14 @@ public class MainActivity extends AppCompatActivity {
 
         //parameters for the game should be configurable
         userTurn = 'X';
-        boardSize = 15;
+        boardSize = 16;
         aiLevel = 1; //corresponds to checked menu item difficulty_easy
 
-        boardState = new BoardState(boardSize, 5, aiLevel,5);
+        boardState = new BoardState(boardSize, aiLevel,5);
         boardView.setBoardState(boardState);
         boardView.setGameActivity(this);
 
-        // U : 2 players, 2 : X player and the user goes first, O : 1 player and the AI goes first
+        // U : 2 players, X : 1 player and the user goes first, O : 1 player and the AI goes first
         if(userTurn == 'U') {
             boardState.setIsMultiPlayer();
             boardState.setUserTurn('X');
@@ -87,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onDialogFragmentDismissedListener(int difficulty, int mode) {
                     aiLevel = difficulty;
-                    switch (aiLevel) {
+                    switch(aiLevel) {
                         case 1:
                             difficultyMenu.findItem(R.id.action_difficulty_easy).setChecked(true);
                             difficultyMenu.findItem(R.id.action_difficulty_medium).setChecked(false);
@@ -97,7 +96,6 @@ public class MainActivity extends AppCompatActivity {
                             difficultyMenu.findItem(R.id.action_difficulty_easy).setChecked(false);
                             difficultyMenu.findItem(R.id.action_difficulty_medium).setChecked(true);
                             difficultyMenu.findItem(R.id.action_difficulty_hard).setChecked(false);
-                            userTurn = 'O';
                             break;
                         case 3:
                             difficultyMenu.findItem(R.id.action_difficulty_easy).setChecked(false);
@@ -105,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
                             difficultyMenu.findItem(R.id.action_difficulty_hard).setChecked(true);
                             break;
                     }
-                    switch (mode) {
+                    switch(mode) {
                         case 1:
                             userTurn = 'X';
                             break;
@@ -128,14 +126,14 @@ public class MainActivity extends AppCompatActivity {
         else if(item.getItemId() == R.id.action_undo) {
             if(!gameOver) {
                 if(userTurn == 'U') {
-                    if (boardState.getMoveCounter() <= 1)
+                    if(boardState.getMoveCounter() <= 1)
                         rematchGame();
                     else {
                         boardState.unMove();
                         boardView.invalidate();
                     }
                 }
-                else if (userTurn == 'X') {
+                else if(userTurn == 'X') {
                     if (boardState.getMoveCounter() <= 2)
                         rematchGame();
                     else {
@@ -143,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
                         boardView.invalidate();
                     }
                 }
-                else if (userTurn == 'O') {
+                else if(userTurn == 'O') {
                     if (boardState.getMoveCounter() <= 3)
                         rematchGame();
                     else {
@@ -184,12 +182,12 @@ public class MainActivity extends AppCompatActivity {
         gameOver = true;
         String msg = "";
         if (userTurn == 'U')
-            if (c == 'D')
+            if(c == 'D')
                     msg = getResources().getString(R.string.game_end_tie);
                 else
                     msg = String.format(getResources().getString(R.string.game_end_xo_won), c);
         else {
-            if (c == 'D')
+            if(c == 'D')
                 msg = getResources().getString(R.string.game_end_tie);
             else if (userTurn == c)
                 msg = getResources().getString(R.string.game_end_player_won);
@@ -202,7 +200,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void rematchGame() {
         gameOver = false;
-        boardState = new BoardState(boardSize, 5, aiLevel,5);
+        boardState = new BoardState(boardSize, aiLevel,5);
         boardView.setBoardState(boardState);
         boardView.setGameActivity(this);
 
@@ -215,7 +213,7 @@ public class MainActivity extends AppCompatActivity {
             boardState.setUserTurn('X');
             boardState.setAiTurn('O');
             boardState.setCurrentPlayer('X');
-        } else {
+        } else if(userTurn == 'O') {
             boardState.setUserTurn('O');
             boardState.setAiTurn('X');
             boardState.setCurrentPlayer('X');
